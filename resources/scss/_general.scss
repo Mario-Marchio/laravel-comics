@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+}
+
+.d-flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.r-header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-main {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.nav-main-img {
+    height: 50px;
+}
+
+.nav-main-a {
+    color: white;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+.nav-main-li {
+    padding: 0 30px;
+}
+
+.dc-bg {
+    background-image: url(../assets/img/footer-bg.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main-a {
+    color: gray;
+    font-size: 15px;
+    padding: 3px 0;
+}
+
+.main-list-name {
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.main-container {
+    padding: 0 20px;
+}
+
+.img-main {
+    position: absolute;
+    top: -55px;
+    right: 300px;
+}
+
+.sign-up-footer {
+    color: white;
+    padding: 8px;
+    border: 1px solid #0282f9;
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #303030;
+    position: relative;
+    z-index: 1;
+}
+
+.follow-us-footer {
+    color: #0282f9;
+    padding: 40px 0;
+}
+
+.img-footer {
+    padding: 0 10px;
+}
