@@ -118,3 +118,10 @@ footer {
 .img-footer {
     padding: 0 10px;
 }
+.jumbotron {
+    background-image: url(../../public/img/jumbotron.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
