@@ -1,1 +1,3 @@
-@import '~bootstrap/scss/bootstrap';
+@use "general";
+@use "util";
+@import "~bootstrap/scss/bootstrap";

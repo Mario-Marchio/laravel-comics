@@ -19,8 +19,9 @@ li {
     display: flex;
 }
 
-a {
+.card a {
     text-decoration: none;
+    color: black;
 }
 
 .container {
@@ -124,4 +125,10 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
