@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     @vite('resources/js/app.js')
-    @extends('main')
 </head>
 
 <body>
@@ -53,20 +52,7 @@
             </div>
         </div>
         <div class="jumbotron"></div>
-        @section('content')
-            <div class="bgc-black py-32">
-                <div class="container card-container ">
-                    @foreach ($ComicBooks as $ComicBook)
-                        <div class="card">
-                            <a href="{{ route('combook') }}">
-                                <img :src="{{ $ComicBook['thumb'] }}">
-                                <h3>{{ $ComicBook['title'] }}</h3>
-                            </a>
-                        </div>
-                    @endforeach
-                @endsection
-            </div>
-        </div>
+        @yield('content')
         <main>
             <div class="bgc-l-blue">
                 <div class="container nav-main">
