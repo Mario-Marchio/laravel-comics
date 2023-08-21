@@ -51,7 +51,16 @@
                 </ul>
             </div>
         </div>
-        <div class="jumbotron">
+        <div class="jumbotron"></div>
+        <div class="container card-container">
+            @foreach ($ComicBooks as $ComicBook)
+                <div class="card">
+                    <a href="{{ route('combook') }}">
+                        <img :src="{{ $ComicBook['thumb'] }}">
+                        <h3>{{ $ComicBook['title'] }}</h3>
+                    </a>
+                </div>
+            @endforeach
         </div>
         <main></main>
         <footer></footer>
