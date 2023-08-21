@@ -24,5 +24,58 @@
                tempore at.Error iure nam neque! Blanditiis error praesentium suscipit. Perspiciatis et sint accusamus
                itaque, unde natus minima beatae facere ab omnis officiis, tempora quasi deserunt dolores laborum autem ex
                incidunt qui.</div>
+           <div class="d-flex">
+               <table class="table">
+                   <thead>
+                       <tr>
+                           <th scope="col">talents</th>
+                           <th scope="col"></th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <th scope="row">Art by:</th>
+                           <td><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorum,
+                                   expedita debitis incidunt magni </a></td>
+
+                       </tr>
+                       <tr>
+                           <th scope="row">Written by:</th>
+                           <td><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorum,
+                                   expedita debitis incidunt magni </a></td>
+
+
+                       </tr>
+                       <tr>
+
+                       </tr>
+                   </tbody>
+               </table>
+
+               <table class="table">
+                   <thead>
+                       <tr>
+                           <th scope="col">Specs</th>
+                           <th scope="col"></th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <th scope="row">Series:</th>
+                           <td><a href="#">ACTION COMICS</a></td>
+                       </tr>
+                       <tr>
+                           <th scope="row">U.S Price:</th>
+                           <td>$19.99</td>
+
+                       </tr>
+                       <tr>
+                           <th scope="row">on sale date:</th>
+                           <td colspan="2">oct 02 2018</td>
+
+                       </tr>
+                   </tbody>
+               </table>
+           </div>
        </div>
    @endsection
