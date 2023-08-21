@@ -52,7 +52,9 @@
             </div>
         </div>
         <div class="jumbotron"></div>
+
         @yield('content')
+
         <main>
             <div class="bgc-l-blue">
                 <div class="container nav-main">
