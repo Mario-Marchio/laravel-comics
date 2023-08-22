@@ -1,11 +1,13 @@
    @extends('layout')
 
    @section('content')
-       <div class="l-blue-bg"></div>
+       <div class="l-blue-bg">
+       </div>
        <div class="container-small ">
-           <b class="book-text pt-5">ACTION COMICS #1000: THE DELUXE EDITION</b>
+           <b class="book-text pt-5">{{ $ComicBook['title'] }}</b>
            <div class="btn-group w-800 mt-4 " role="group">
-               <button type="button" class="btn btn-success d-flex justify-content-start">U.S. price: $19.99 </button>
+               <button type="button" class="btn btn-success d-flex justify-content-start">U.S. price:
+                   {{ $ComicBook['price'] }} </button>
 
                <div class="btn-group" role="group">
                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
@@ -18,12 +20,7 @@
                    </ul>
                </div>
            </div>
-           <div class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem debitis, voluptatibus,
-               ipsa laboriosam
-               mollitia cum eligendi repellat ipsam modi ad laudantium corporis vero. Quidem libero debitis quam saepe
-               tempore at.Error iure nam neque! Blanditiis error praesentium suscipit. Perspiciatis et sint accusamus
-               itaque, unde natus minima beatae facere ab omnis officiis, tempora quasi deserunt dolores laborum autem ex
-               incidunt qui.</div>
+           <div class="my-4">{{ $ComicBook['description'] }}</div>
            <div class="d-flex">
                <table class="table">
                    <thead>
@@ -35,14 +32,20 @@
                    <tbody>
                        <tr>
                            <th scope="row">Art by:</th>
-                           <td><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorum,
-                                   expedita debitis incidunt magni </a></td>
+                           <td>
+                               @foreach ($ComicBook['artists'] as $artist)
+                                   <a href="#">{{ $artist }}</a>
+                               @endforeach
+                           </td>
 
                        </tr>
                        <tr>
                            <th scope="row">Written by:</th>
-                           <td><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorum,
-                                   expedita debitis incidunt magni </a></td>
+                           <td>
+                               @foreach ($ComicBook['writers'] as $writer)
+                                   <a href="#">{{ $writer }}</a>
+                               @endforeach
+                           </td>
 
 
                        </tr>
@@ -62,16 +65,16 @@
                    <tbody>
                        <tr>
                            <th scope="row">Series:</th>
-                           <td><a href="#">ACTION COMICS</a></td>
+                           <td><a href="#">{{ $ComicBook['series'] }}</a></td>
                        </tr>
                        <tr>
                            <th scope="row">U.S Price:</th>
-                           <td>$19.99</td>
+                           <td>{{ $ComicBook['price'] }}</td>
 
                        </tr>
                        <tr>
                            <th scope="row">on sale date:</th>
-                           <td colspan="2">oct 02 2018</td>
+                           <td colspan="2">{{ $ComicBook['sale_date'] }}</td>
 
                        </tr>
                    </tbody>
